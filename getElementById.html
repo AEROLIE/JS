@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+	<title>getElementById</title>
+</head>
+
+<body>
+	<h3 id="con">Hello World</h3>
+	<script type="text/javascript">
+		var a=document.getElementById("con");
+		document.write("获取元素结果："+a+"<br>");		
+		document.write("原文字："+a.innerHTML+"<br>");
+		a.innerHTML="Hello World Again"
+		document.write("修改后文字:"+a.innerHTML+"<br>");
+	</script>
+	<p>通过DOM改变HTML样式</p>
+	<h3 id="con1">I Love Javascript</h3>
+	<script type="text/javascript">
+		var b=document.getElementById("con1");
+		b.style.color="red";
+		b.style.fontsize="20";
+		b.style.backgroundColor="blue";
+	</script>
+</body>
+</html>
