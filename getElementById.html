@@ -14,5 +14,13 @@
 		con.innerHTML="Hello World Again"
 		document.write("修改后文字:"+a.innerHTML+"<br>");
 	</script>
+	<p>通过DOM改变HTML样式</p>
+	<h3 id="con1">I Love Javascript</h3>
+	<script type="text/javascript">
+		var b=document.getElementById("con1");
+		b.style.color="red";
+		b.style.fontsize="20";
+		b.style.backgroundColor="blue";
+	</script>
 </body>
 </html>
