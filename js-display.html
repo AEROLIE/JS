@@ -4,6 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <title>JS display</title>
 	<script src='js-display.js'></script>
+	<style>
+    body{ font-size:16px;}
+    .one{
+		border:1px solid #eee;
+		width:230px;
+		height:50px;
+		background:#ccc;
+		color:red;
+    }
+	.two{
+		border:1px solid #ccc;
+		width:230px;
+		height:50px;
+		background:#9CF;
+		color:blue;
+	}
+	</style>
 </head>
 
 <body>
@@ -12,7 +29,13 @@
 	<form>
 		<input type='button' onClick="hidetext()" value="隐藏内容">
 		<input type='button' onClick='showtext()' value='显示内容'>
-		
 	</form>
+   <br/><br />
+   <p style="color:red">控制类名（className 属性）:</p>
+    <p id="p1" > JavaScript使网页显示动态效果并实现与用户交互功能。</p>
+    <input type="button" value="添加样式" onclick="add()"/>
+	<p id="p2" class="one">JavaScript使网页显示动态效果并实现与用户交互功能。</p>
+    <input type="button" value="更改外观" onclick="modify()"/>
+	
 </body>
 </html>
