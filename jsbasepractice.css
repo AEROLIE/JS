@@ -1,0 +1,13 @@
+body{
+	font-size:12px;
+}
+p{
+	line-height:18px;
+	text-indent:2em;
+}
+#txt{
+	height:400px;
+	width:600px;
+	border:#333 solid 1px;
+	padding:5px;
+}
