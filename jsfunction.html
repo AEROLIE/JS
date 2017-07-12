@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>js函数</title>
+
+<script type="text/javascript">
+	function bijiao(x,y){
+//三相运算符 方法实现		var max=x>y?x:y;
+//						  return max;
+		if(x>y){
+//			document.write('最大值是：'+x);
+			return x;
+		}
+		else if(x==y){
+//			document.write('最大值是：'+x);
+			return x;
+		}
+		else{
+//			document.write('最大值是：'+y);
+			return y;
+		}
+	}
+	document.write('5和4的较大值是：'+bijiao(5,4)+'<br />');
+	document.write('6和3的较大值是：'+bijiao(6,3)+'<br />');
+</script>
+</head>
+
+<body>
+</body>
+</html>
