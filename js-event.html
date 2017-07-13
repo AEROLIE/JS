@@ -10,8 +10,19 @@
 	<form>
 		<!-- onClick单击事件 -->
 		<input type="button" onClick="openwin()" value="点击" /><br />
-		< />
-		
+		<!-- onmouseover鼠标经过时间 -->
+		密码<input name="password" type="text" />
+		<input name="button" type="button" value="确定" onmouseover="info()" /><br />
+		<!-- onmouseout鼠标移开事件 -->
+		<a href="http://www.imooc.com" onmouseout="message()">点击我</a><br />
+		<!-- onfocus光标聚焦事件 -->
+		<select name="career">
+			<option>学生</option>
+			<option>教师</option>
+			<option>工程师</option>
+			<option>演员</option>
+			<option>会计</option>
+		</select>
 	</form>
 </body>
 </html>
