@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Array</title>
+<script type="text/javascript">
+
+// 一维数组
+var myarr=new Array(3);
+myarr[0]=80;
+myarr[1]=60;
+myarr[2]=99;
+document.write("第一个人的成绩："+myarr[0]+'<br />');
+document.write("第一个人的成绩："+myarr[1]+'<br />');
+document.write("第一个人的成绩："+myarr[2]+'<br />');
+document.write('<br>'+'<br/>');
+// 二维数组
+var Myarr =new Array();
+for(i=0;i<3;i++){
+	Myarr[i]=new Array();
+	for(j=0;j<6;j++){
+		Myarr[i][j]=i+j;
+		document.write('Myarr['+i+']['+j+']的值是：'+Myarr[i][j]+'<br/>');
+	}
+} 
+document.write('<br />'+'<br>');
+var infos = new Array();
+infos=[["小A","女",21,"大一"],["小B","男",23,"大三"],["小C","男",24,"大四"],["小D","女",21,"大一"],["小E","女",22,"大四"],["小F","男",21,"大一"],["小G","女",22,"大二"],["小H","女",20,"大三"],["小I","女",20,"大一"],["小J","男",20,"大三"]];
+
+var i=0;
+var j=0;
+  for(i=0;i<infos.length;i++){
+      if((infos[i][3]=='大一')&&(infos[i][1]=='女')){
+           document.write(infos[i][0]+'是'+infos[i][3]+'<br />');
+	  }
+  }
+</script>
+</head>
+
+<body>
+</body>
+</html>

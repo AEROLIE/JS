@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>js event</title>
+<script src="js-event.js"></script>
+</head>
+
+<body>
+	<form>
+		<!-- onClick单击事件 -->
+		<input type="button" onClick="openwin()" value="点击" /><br /><br /><br />
+		<!-- onmouseover鼠标经过时间 -->
+		密码<input name="password" type="text" />
+		<input name="button" type="button" value="确定" onmouseover="info()" /><br /><br /><br />
+		<!-- onmouseout鼠标移开事件 -->
+		<a href="http://www.imooc.com" onmouseout="message()">点击我</a><br /><br /><br />
+		<!-- onfocus光标聚焦事件 -->
+		<select name="career" onfocus="message1()">
+			<option>学生</option>
+			<option>教师</option>
+			<option>工程师</option>
+			<option>演员</option>
+			<option>会计</option>
+		</select>
+		<br /><br /><br />
+		<!-- onblur失焦事件 -->
+		用户:<input name="username" type="text" value="请输入用户名">
+		密码:<input name="password" type="text" value="请输入密码" onblur="message2()">
+		<br /><br /><br />
+		<!-- onselect 内容选中事件 -->
+		个人简介：<br />
+		<textarea name="summary" cols="60" rows="5" onselect="message3()">请写入个人简介，不少于200字！</textarea>
+		<br /><br /><br />
+		<!-- onchange 文本框内容改变事件 -->
+		个人简介：<br />
+		<textarea name="summary" cols="60" rows="5" onchange="message4()">请写入个人简介！</textarea>
+		<br /><br /><br />
+		<!-- onload 加载事件 -->
+		<img src="/1.jpg" onload="message5()">
+		<br /><br /><br />
+		<!-- onunload 卸载事件 -->
+		<img src="/2.jpg" onbeforeunload="message6()">
+		<a href="www.imooc.com">imooc</a>
+		<br /><br /><br />
+		
+		<!-- event 事件练习 -->
+		<input type="text" id="txt1" />
+		<select id="select">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+		<input type="text" id="txt2">
+		<input type="button" value="=" onClick="count()">
+		<input type="text" id="txt3" />
+		
+		<br /><br /><br />
+	</form>
+</body>
+</html>
