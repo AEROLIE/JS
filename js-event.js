@@ -37,3 +37,40 @@ function message4()
 {
 	alert('您改变了文本内容');
 }
+
+function message5()
+{
+	alert('加载中，请稍等···');
+}
+
+function message6()
+{
+	alert('确认离开么？');
+}
+
+function count()
+{
+	var a=document.getElementById('txt1').value;
+	var b=document.getElementById('txt2').value;
+	var c;
+	var d=document.getElementById('select').value;
+	switch(d)
+		{
+			case '+':
+			c=parseInt(a)+parseInt(b);
+			document.getElementById('txt3').value=c;
+			break;			
+			case '-':
+			c=parseInt(a)-parseInt(b);
+			document.getElementById('txt3').value=c;
+			break;			
+			case '*':
+			c=parseInt(a)*parseInt(b);
+			document.getElementById('txt3').value=c;
+			break;			
+			case '/':
+			c=parseInt(a)/parseInt(b);
+			document.getElementById('txt3').value=c;
+			break;
+		}
+}
