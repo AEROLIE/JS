@@ -24,3 +24,7 @@ var mytime=new Date();
 document.write('当前时间：'+mytime+'<br>');
 mytime.setTime(mytime.getTime()+2*60*60*1000);
 document.write('推迟两个小时时间：'+mytime+'<br>');
+//string字符串对象
+var message='I Love Javascript';
+var mychar=message.toLowerCase();
+document.write('字符串'+mychar);
