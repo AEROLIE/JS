@@ -24,3 +24,28 @@ var mytime=new Date();
 document.write('当前时间：'+mytime+'<br>');
 mytime.setTime(mytime.getTime()+2*60*60*1000);
 document.write('推迟两个小时时间：'+mytime+'<br>');
+//string字符串对象
+var message='I Love Javascript';
+var mychar=message.toLowerCase();
+document.write('字符串'+mychar);
+document.write('<br>'+'<br>');
+//返回指定位置的字符
+var mystr='Hello World!';
+document.write(mystr.length+'&nbsp');
+document.write(mystr.charAt(mystr.length-1));
+document.write('<br>'+'<br>');
+//返回指定的字符串首次出现的位置
+document.write(mystr.indexOf('H')+'<br>');
+document.write(mystr.indexOf('W',5));
+//查询第二个o出现的位置
+for(var i=0;i<mystr.length;i++)
+	{
+		if(mystr.charAt(i)=='o')
+			{
+				j++;
+				if(j==2)
+					{
+						document.write(mystr.indexOf());
+					}
+			}
+	}
