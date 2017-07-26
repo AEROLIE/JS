@@ -53,5 +53,6 @@ for(var i=0;i<mystr.length;i++)
 document.write('<br>'+'<br>');
 //字符串分割
 document.write(mystr.split('',6));
+document.write('<br>'+'<br>');
 //substring() 提取字符串
-document.write(mystr.substring());
+document.write(mystr.substring(6,9));
