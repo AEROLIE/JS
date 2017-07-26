@@ -36,16 +36,23 @@ document.write(mystr.charAt(mystr.length-1));
 document.write('<br>'+'<br>');
 //返回指定的字符串首次出现的位置
 document.write(mystr.indexOf('H')+'<br>');
-document.write(mystr.indexOf('W',5));
+document.write(mystr.indexOf('W',5)+'<br>'+'<br>');
 //查询第二个o出现的位置
+var j=0;
 for(var i=0;i<mystr.length;i++)
 	{
 		if(mystr.charAt(i)=='o')
-			{
+			{	
 				j++;
 				if(j==2)
 					{
-						document.write(mystr.indexOf());
+						document.write(mystr.indexOf(mystr.charAt(i),i));
 					}
 			}
 	}
+document.write('<br>'+'<br>');
+//字符串分割
+document.write(mystr.split('',6));
+document.write('<br>'+'<br>');
+//substring() 提取字符串
+document.write(mystr.substring(6,9));
