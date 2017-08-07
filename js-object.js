@@ -56,3 +56,12 @@ document.write(mystr.split('',6));
 document.write('<br>'+'<br>');
 //substring() 提取字符串
 document.write(mystr.substring(6,9));
+document.write('<br>'+'<br>');
+
+
+//jsobject 编程联系
+var nowdate=new Date();
+var newweekday=nowdate.getDay();
+var newweek=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
+
