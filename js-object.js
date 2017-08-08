@@ -64,4 +64,14 @@ var nowdate=new Date();
 var newweekday=nowdate.getDay();
 var newweek=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
-
+var scoreArr=scoreStr.split(';');
+document.write(scoreArr+'<br>');
+var sum=0;
+var av=0;
+for(i=0;i<scoreArr.length;i++)
+{
+	var index=scoreArr[i].indexOf(':');
+	sum=sum+parseInt(scoreArr[i].substr(index+1,2));
+}
+av=sum/scoreArr.length;
+document.write(nowdate+newweek[newweekday]+'--班级的总分：'+sum+'&nbsp'+av);
