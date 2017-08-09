@@ -61,6 +61,9 @@ document.write('<br>'+'<br>');
 
 //jsobject 编程联系
 var nowdate=new Date();
+var nowdateyear=nowdate.getFullYear();
+var nowdatemonth=nowdate.getMonth();
+var nowdateday=nowdate.getDate();
 var newweekday=nowdate.getDay();
 var newweek=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var scoreStr = "小明:87;小花:81;小红:97;小天:76;小张:74;小小:94;小西:90;小伍:76;小迪:64;小曼:76";
@@ -74,4 +77,7 @@ for(i=0;i<scoreArr.length;i++)
 	sum=sum+parseInt(scoreArr[i].substr(index+1,2));
 }
 av=sum/scoreArr.length;
-document.write(nowdate+newweek[newweekday]+'--班级的总分：'+sum+'&nbsp'+av);
+document.write(nowdate+newweek[newweekday]+'--班级的总分：'+sum+'&nbsp'+av+'<br>');
+document.write(nowdateyear+'年'+nowdatemonth+'月'+nowdateday+'日'+newweek[newweekday]+'--班级的总分：'+sum+'&nbsp'+'&nbsp'+'&nbsp'+'班级的平均分：'+av+'<br>');
+
+
